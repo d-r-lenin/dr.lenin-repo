@@ -1,18 +1,17 @@
 *{
 	font-family: monospace;
-	font-size:14px;
+	font-size:35px;
 	margin:0;
 	padding:0;
 }
 body{
 	background-image: linear-gradient(#f8bbbb,#acacfc,#a5d3a5);
-	height: 90vh;
+	height: 100vh;
 }
 
 #calc{
-
-	width:200px;
-	height: 200px;
+	width: 420px;
+	height:548px;
 	margin: auto;
 	margin-top: 30px;
 }
@@ -20,6 +19,7 @@ body{
 /*              /////////////              display                  /////////////////                       */
 
 .dis1{
+	display:block;
 	padding-top: 13px;
 	padding-right: 5px;
 	text-align: right;
@@ -27,10 +27,12 @@ body{
 	font-size: 2rem;
 	background-color: wheat;
 	border:none;
+	overflow: hidden;
 }
 .display{
+	overflow: hidden;
 	height:40%;
-	display: flex;
+	display: flex; 
 	justify-content: space-around;
 	flex-direction: column;
 }
@@ -40,55 +42,43 @@ body{
 	color: rgba(255, 255, 255, 0.79);
 	background-color:#95a5a6;
 	text-align: right;
-	font-size: .9em;
+	font-size: .9rem;
 	padding-right: 4px;
 }
-
 
 /*                  \\\\\\\\\\\\              number pad           \\\\\\\\\\\                  */
 
 
 .pad{
 	background-color: #34495e;
-	display:flex;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: 3fr 1fr;
 	height: 63%;
 	text-align: center;
 }
 .numpad{
-	width: 75%;
-}
-.numpad{
 	background-color:#34495e;
-	display: flex;
-    flex-wrap:wrap;
-	justify-content: space-around;
-	align-items:stretch;
+	display:grid;
+	grid-template-columns: repeat(3,1fr);
+	justify-items: stretch;
+	grid-gap: .2%;
 }
 
 li{
-	align-self: center;
-	display: block;
 	list-style: none;
 }
-.numpad li{
-	
-	padding-right:  .40em;
-	padding: .35em .2em;
-}
 .opp{
-	display: flex;
-	width: 25%;
+	display: grid;
 	flex-direction: column;
-	justify-content:space-around;
-	align-items: center;
+	justify-items: stretch;
+	align-items:stretch;
+	grid-gap: 1px;
 }
 .opp li{
 	font-size: .8rem
 }
 
 .numpad button{
-	width: 32.41145515%;
 	background-color:#51637b; 
 	margin: .7px;
 }
@@ -98,8 +88,10 @@ button{
 }
 .opp button{
 	background-color: #f39c12;
-	width: 40px;
-	padding: 5.6px 25px;
+/*	width:auto;*/
+/*	padding: 5.6px 25px;*/
+}
+.opp button:first-child{
 }
 .opp button:active,
 .opp button:focus,
@@ -118,3 +110,40 @@ button{
 	box-shadow: 0;
 }
 
+/*//////////////////////////////////////////////Media Query/////////////////////*/
+
+@media only screen and (max-width:1024px){
+*{
+	font-size:28px;
+}
+#calc{
+	width: 380px;
+	height:500px;
+	margin-top: 20px;
+}
+
+}
+
+@media only screen and (max-width:800px){
+*{
+	font-size:28px;
+}
+#calc{
+	width: ;
+	height:;
+	margin-top: 20px;
+}
+
+}
+
+@media only screen and (max-width:425px){
+*{
+	font-size:27px;
+}
+#calc{
+	width:100%;
+	height:98vh;
+	margin-top: 0;
+}
+
+}
