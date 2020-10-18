@@ -5,36 +5,30 @@
 	padding:0;
 }
 body{
-	background-image: linear-gradient(#ffbaba,blue,green,yellow,#a31567,purple,#bcaab7,#03f5ff,#0d8640,#792121,#80b74a,#ffffff,purple);
+	background-image: linear-gradient(#f8bbbb,#acacfc,#a5d3a5);
 	height: 90vh;
 }
 
 #calc{
-	border-radius: 11px;
-	padding: 10px 10px 30px 10px;
-	border: 1px solid black;
+
 	width:200px;
 	height: 200px;
 	margin: auto;
 	margin-top: 30px;
-		background-color:beige;
 }
 
 /*              /////////////              display                  /////////////////                       */
 
 .dis1{
 	padding-top: 13px;
+	padding-right: 5px;
 	text-align: right;
 	height: 75%;
 	font-size: 2rem;
-	background-color: black;
-	color: beige;
+	background-color: wheat;
 	border:none;
 }
 .display{
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-	overflow: hidden;
 	height:40%;
 	display: flex;
 	justify-content: space-around;
@@ -44,7 +38,7 @@ body{
 	border:none;
 	height: 25%;
 	color: rgba(255, 255, 255, 0.79);
-	background-image: linear-gradient(#555555,gray);
+	background-color:#95a5a6;
 	text-align: right;
 	font-size: .9em;
 	padding-right: 4px;
@@ -55,10 +49,7 @@ body{
 
 
 .pad{
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
-	overflow: hidden;
-	background-color: dimgray;
+	background-color: #34495e;
 	display:flex;
 	flex-wrap: wrap;
 	height: 63%;
@@ -68,7 +59,7 @@ body{
 	width: 75%;
 }
 .numpad{
-	background-color: #767272;
+	background-color:#34495e;
 	display: flex;
     flex-wrap:wrap;
 	justify-content: space-around;
@@ -98,7 +89,7 @@ li{
 
 .numpad button{
 	width: 32.41145515%;
-	background-color:dimgrey; 
+	background-color:#51637b; 
 	margin: .7px;
 }
 button{
@@ -106,15 +97,15 @@ button{
 	color: antiquewhite;
 }
 .opp button{
-	background-color: rgb(255, 192, 72);
+	background-color: #f39c12;
 	width: 40px;
 	padding: 5.6px 25px;
 }
 .opp button:active,
 .opp button:focus,
 .opp button:hover{
-	background-color: rgba(255, 229, 141, 0.85);
-	color: #f4ac56;
+	background-color: rgba(243, 156, 18, 0.9);
+	color: #413a2b;
 	border: 0;
 	box-shadow: 0;
 }
@@ -122,7 +113,8 @@ button{
 .numpad button:active,
 .numpad button:focus,
 .numpad button:hover{
-	background-color: #958e8e;	
+	background-color:rgba(80, 105, 129, 3); 
 	border: 0;
 	box-shadow: 0;
 }
+

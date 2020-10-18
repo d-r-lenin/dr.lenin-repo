@@ -1,7 +1,7 @@
 const display1=document.querySelector(".dis1");
 const display2=document.querySelector(".dis2");
 const buttons=document.querySelectorAll('button');
-console.dir(buttons);
+
 
 const btnN0=document.querySelector(".n0");
 btnN0.addEventListener("click",function(){
@@ -56,7 +56,9 @@ btnNEq.addEventListener("click",function(){
 
 const btnclr=document.querySelector(".clr");
 btnclr.addEventListener("click",function(){
-	display1.innerText='';
+	let text=display1.innerText;
+	text=text.slice(0,text.length-1);
+	display1.innerText=`${text}`;
 });
 
 const btndiv=document.querySelector(".div");
