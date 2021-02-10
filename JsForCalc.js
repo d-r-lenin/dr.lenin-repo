@@ -2,6 +2,12 @@ const display1=document.querySelector(".dis1");
 const display2=document.querySelector(".dis2");
 const buttons=document.querySelectorAll('button');
 
+if('serviceWorker' in navigator){
+   window.addEventListener('load', e => {
+      navigator.serviceWorker.register('./sw.js')
+   })
+}
+
 
 const btnN0=document.querySelector(".n0");
 btnN0.addEventListener("click",function(){
